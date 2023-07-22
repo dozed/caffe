@@ -30,6 +30,7 @@ template <typename Dtype>
 Net<Dtype>::Net(const string& param_file, Phase phase,
     const int level, const vector<string>* stages) {
   NetParameter param;
+
   ReadNetParamsFromTextFileOrDie(param_file, &param);
   // Set phase, stages and level
   param.mutable_state()->set_phase(phase);

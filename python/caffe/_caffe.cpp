@@ -48,7 +48,9 @@ typedef float Dtype;
 const int NPY_DTYPE = NPY_FLOAT32;
 
 // Selecting mode.
-void set_mode_cpu() { Caffe::set_mode(Caffe::CPU); }
+void set_mode_cpu() {
+  Caffe::set_mode(Caffe::CPU);
+}
 void set_mode_gpu() { Caffe::set_mode(Caffe::GPU); }
 
 void InitLog() {
